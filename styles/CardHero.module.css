@@ -1,0 +1,23 @@
+.card {
+    padding: 1rem 1.2rem;
+    border-radius: 5px;
+    background: rgb(81, 66, 95);
+    border: none;
+    text-align: justify;
+    margin: 5px;
+    padding: auto;
+    max-width: auto;
+    height: 100px;
+  }
+
+  .cardtitle{
+    color: rgb(255,255,255);
+  }
+  
+  .cardcontent{
+   color: rgb(47, 47, 48);
+  }
+
+  .cardlink{
+    color:rgb(32, 12, 51);
+  }

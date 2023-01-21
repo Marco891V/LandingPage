@@ -1,0 +1,41 @@
+.container{
+  max-width: auto;
+  max-height: auto;
+}
+
+.card {
+    padding: 1rem 1.2rem;
+    background: rgb(81, 66, 95);
+    border: none;
+    text-align: center;
+    margin: 5px;
+    padding: auto;
+    max-width: auto;
+    height: 100px;
+  }
+
+  .cardtitle{
+    color: rgb(255,255,255);
+  }
+  
+  .cardcontent{
+   color: rgb(47, 47, 48);
+  }
+
+  .icon{
+    background-color: linear-gradient(to right, #33ccff 0%, #ff99cc 100%);
+    size: 100px;
+  }
+
+  .buttoncard{
+    background-color: '';
+    border: none;
+    color: rgb(255,255,255);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+  }
