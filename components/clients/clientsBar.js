@@ -1,17 +1,18 @@
-import { Col } from 'reactstrap'
-import styles from '../../styles/Landing.module.css'
+import styles from '../../styles/ClientsBar.module.css'
 
 function ClientsBar(props) {
     let { client } = props;
 
     return (
         <>
-            <Col md="2" className={styles.boxclient}>
+        <div className={styles.row}>
+            <div className={styles.boxclient}>
                 <img
                     className={styles.imgclient}
                     src={client.image}
                 />
-            </Col>
+            </div>
+        </div>
         </>
     );
 }

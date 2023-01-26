@@ -292,10 +292,16 @@
   width: 500px;
 }
 
+.h1 {
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 .p{
-  color: black;
-  text-align: justify;
-  margin: 50px;
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: small;
+  padding-left: 20px;
 }
 
 .row{
@@ -319,4 +325,24 @@
 .containerCard {
   flex: 1;
   padding: 20px;
+}
+
+.li{
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+  text-align: justify;
+  list-style: none;
+  padding: 5px 20px;
+}
+
+.centerCarousel{
+  margin-inline-start: 20%;
+  padding: 20px;
+  width: 100%;
+}
+
+.centerCarouselBrand{
+  margin-inline: 35%;
+  width: 30%;
 }

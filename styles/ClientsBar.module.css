@@ -1,0 +1,23 @@
+.row{
+    margin: auto;
+}
+
+.imgclient {
+    background-image: transparent;
+    margin-right: 30px;
+    margin-left: 30px;
+    max-height: 50px;
+    max-width: 150px;
+}
+
+.boxclient {
+    margin: 5px;
+    width: auto;
+}
+
+.card {
+    width: 50%;
+    border-color: black;
+    border: 5px;
+    border-radius: 5px;
+}

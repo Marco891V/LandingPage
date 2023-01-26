@@ -1,4 +1,3 @@
-import { Col, Button } from 'reactstrap'
 import styles from '../../styles/EndHero.module.css'
 
 const EndHero = (props) =>{
@@ -7,11 +6,11 @@ const EndHero = (props) =>{
     const buttonTitle = props.buttonTitle;
 
     return(
-        <Col className={styles.row}>
+        <div className={styles.row}>
             <h2>{title}</h2>
             <p className={styles.p}>{content}</p>
-            <Button className={styles.button}>{buttonTitle}</Button>
-        </Col>
+            <button className={styles.button}>{buttonTitle}</button>
+        </div>
 
     );
 }

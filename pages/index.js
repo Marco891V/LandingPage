@@ -1,16 +1,20 @@
-import { Container, Row, Col } from 'reactstrap'
-import Navbar from '../components/Header/BarNav'
+import Navbar from '../components/Header/NavBar'
 import Button from '../components/Hero/Button'
-import TitleSection from '../components/common/titleSection'
-import Img from '../components/Header/image'
-import ImgHero from '../components/Hero/image'
+import TitleSection from '../components/common/TitleSection'
+import ImgHeader from '../components/Header/ImageHeader'
+import ImgHero from '../components/Hero/ImageHero'
 import ClientsBar from '../components/clients/clientsBar'
-import CarouselFadeExample from '../components/Hero/Caroseul'
+import DemoCarousel from '../components/Hero/Caroseul'
 import CardHero from '../components/Hero/CardHero'
 import Card from '../components/Hero/Card'
+import CardDynamic from '../components/Hero/CardDynamic'
+import CarouselBrand from '../components/Hero/CarouselBrand'
 import EndHero from '../components/Hero/EndHero'
-import  { DiCss3 } from "react-icons/di"
+import { DiCss3 } from "react-icons/di"
 import Head from 'next/head'
+import Footer from '../components/footer/Footer'
+import NewsLetter from '../components/footer/NewsLetter'
+import Privacy from '../components/footer/PrivacyCopyr'
 import styles from '../styles/Home.module.css'
 
 
@@ -56,23 +60,21 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar
-        title={'Ciao'}
-      />
-      <Container>
-        <Row className={styles.flexcontainer}>
-          <Col md="8" className={styles.textheader}>
-            <h1><strong>Al-Powered Brand Tracking</strong></h1>
-            <p>We help brands make better marketing decisions by
+      <Navbar />
+      <div className='container'>
+        <div className={styles.flexcontainer}>
+          <div className={styles.textheader}>
+            <h1 className={styles.h1} ><strong>Al-Powered Brand Tracking</strong></h1>
+            <p className={styles.p}>We help brands make better marketing decisions by
               delivering world-class, scalable insights.</p>
             <Button title={'Book Demo'} />
-          </Col>
-          <Col md="4">
-            <Img src={"https://www.upmagazinearezzo.it/atladv/wp-content/uploads/2021/01/img-01.png"} />
-          </Col>
-        </Row>
-        <p className={styles.p}>Trusted by some of the world's most innovative brands</p> 
-        <Row className={styles.flexcontainer}> 
+          </div>
+          <div className='col-md-4'>
+            <ImgHeader src={"https://www.upmagazinearezzo.it/atladv/wp-content/uploads/2021/01/img-01.png"} />
+          </div>
+        </div>
+        <p className={styles.p}>Trusted by some of the world's most innovative brands</p>
+        <div className={styles.flexcontainer}>
           {clients.map((client) => {
             return (
               <ClientsBar
@@ -81,130 +83,105 @@ export default function Home() {
               />
             )
           })}
-        </Row>
+        </div>
         <div className={styles.flexcontainer}>
           <div className={styles.containerImage}>
-            <ImgHero src="https://mobile-marketing.it/wp-content/uploads/2022/12/Social-Media-Comparison-Chart-Infographic-Graph-13.png"/>
+            <ImgHero src="https://mobile-marketing.it/wp-content/uploads/2022/12/Social-Media-Comparison-Chart-Infographic-Graph-13.png" />
           </div>
           <div className={styles.containerCard}>
-            <CardHero 
+            <CardHero
               title={'Brand Awareness'}
               content={'Measure the effectiveness of your marketing strategy by understandingconsumer perception about your brand and how it changes over time. Choose from hundreds of standardized association metrics or create your own.'}
-              href= {'#'}
-              link={'Learn More'}
+              href={'#'}
+              textLink={'Learn More'}
+            />
+            <div>
+              <ul>
+                <li className={styles.li}>Audience Segmentation</li>
+                <li className={styles.li}>Research Expertis</li>
+                <li className={styles.li}>Global Tracking</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <TitleSection
+          title="Smarter Tools. Better Marketing Decisions."
+        />
+        <div className={styles.flexcontainer}>
+          <div className='col-md-4'>
+            <Card
+              icon={() => <DiCss3 />}
+              title={'Castomizable Dashboard'}
+              content={'Measure only what you need. Our intuitive dashboard can be customized to track the KPIs most important for you'}
+            />
+          </div>
+          <div className='col-md-4'>
+            <Card
+              icon={() => <DiCss3 />}
+              title={'Reliable Data'}
+              content={'Get high-quality insights generated throught machine learning algorithms to ensure unprecedented occuracy and granularity'}
+            />
+          </div>
+          <div className='col-md-4'>
+            <Card
+              icon={() => <DiCss3 />}
+              title={'Deep Segmentation'}
+              content={'Choose from over 1000+ profile attributes to build the target audiences that matter most for your brand.'}
             />
           </div>
         </div>
-        <TitleSection 
-            title= "Smarter Tools. Better Marketing Decisions."
-          />
-        <Row className={styles.flexcontainer}>
-          <Col md="4">
-            <Card 
-              icon={() => <DiCss3 />}
-              title={'Castomizable Dashboard'}
-              content={'Measure only what you need. Our intuitive dashboard can be customized to track the KPIs most important for you'}
-            />
-          </Col>
-          <Col md="4">
-            <Card
-              icon={() => <DiCss3 />}
-              title={'Reliable Data'}
-              content={'Get high-quality insights generated throught machine learning algorithms to ensure unprecedented occuracy and granularity'}
-            />
-          </Col>
-          <Col md="4">
-            <Card
-              icon={() => <DiCss3 />}
-              title={'Deep Segmentation'}
-              content={'Choose from over 1000+ profile attributes to build the target audiences that matter most for your brand.'}
-            />
-          </Col>
-        </Row>
-        <Row>
-          <Col md="12"></Col>
-        </Row>
-        <TitleSection 
-            title= "Access the Pulse of Human Perception"
-          />
-        <Row className={styles.row}>
-          <Col>
-            <ImgHero 
-              type= "large"
+        <div className='row'>
+          <div className='col-12'></div>
+        </div>
+        <TitleSection
+          title="Access the Pulse of Human Perception"
+        />
+        <div className={styles.row}>
+          <div className='col'>
+            <ImgHero
+              type="large"
               src="https://www.mlaworld.com/wp-content/uploads/2015/08/ragazza-che-ascolta-musica.jpg"
             />
-          </Col>
-        </Row>
-        <TitleSection 
-            title= "Hear From Our Customers"
-          />
-        <Row className={styles.flexcontainer}> 
-          {clients.map((client) => {
-            return (
-              <ClientsBar
-                key={client.id}
-                client={client}
-              />
-            )
-          })}
-        </Row>
-        <Row className={styles.flexcontainer}>
-          <Col md="2">
-            <ImgHero 
-              type= "small"
-              src="https://www.rivaliq.com/wp-content/uploads/2015/01/engineering-and-marketing.jpg"/>
-          </Col>
-          <Col>
-            <CarouselFadeExample />
-          </Col>
-        </Row>
-          <TitleSection 
-            title= "Dive Into the World of Brand Tracking"
-          />
-          <Row className={styles.flexcontainer}>
-          <Col md="4">
-            <Card 
-              icon={() => <DiCss3 />}
-              title={'Castomizable Dashboard'}
-              content={'Measure only what you need. Our intuitive dashboard can be customized to track the KPIs most important for you'}
-              buttonTitle={'Beauty'}
-              type={'beauty'}
-            />
-          </Col>
-          <Col md="4">
-            <Card
-              icon={() => <DiCss3 />}
-              title={'Reliable Data'}
-              content={'Get high-quality insights generated throught machine learning algorithms to ensure unprecedented occuracy and granularity'}
-              buttonTitle={'Entertaiment'}
-              type= {'entertaiment'}
-            />
-          </Col>
-          <Col md="4">
-            <Card
-              icon={() => <DiCss3 />}
-              title={'Deep Segmentation'}
-              content={'Choose from over 1000+ profile attributes to build the target audiences that matter most for your brand.'}
-              buttonTitle={'Apparel'}
-              type= {'apparel'}
-            />
-          </Col>
-        </Row>
-        <Row className={styles.row}>
+          </div>
+        </div>
+        <TitleSection
+          title="Hear From Our Customers"
+        />
+        <div className={styles.centerCarouselBrand}>
+       <CarouselBrand />
+       </div>
+        <div className={styles.flexcontainer}>
+          <div className='col-md-2'>
+            <ImgHero
+              type="small"
+              src="https://www.rivaliq.com/wp-content/uploads/2015/01/engineering-and-marketing.jpg" />
+          </div>
+          <div className='col-md-10' style={{margin: 'auto'}}>
+            <DemoCarousel />
+          </div>
+        </div>
+        <TitleSection
+          title="Dive Into the World of Brand Tracking"
+        />
+        <div className={styles.centerCarousel}>
+        <CardDynamic />
+        </div>
+        <div className={styles.row}>
           <Button title={'Learn More'} />
-        </Row>
-        <Row>
-          <EndHero 
+        </div>
+        <div className='row'>
+          <EndHero
             title={'Make your first step the right one'}
             content={'Learn how you can use Latana to improve your brand marketing and grow faster'}
             buttonTitle={'Book Demo'}
           />
-        </Row>
-        <Row>
-
-        </Row>
-      </Container>
-
+        </div>
+        <div className='row'>
+          <Footer />
+        </div>
+        <NewsLetter />
+        <Privacy />
+      </div>
     </>
   )
 }

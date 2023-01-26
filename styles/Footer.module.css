@@ -1,0 +1,22 @@
+.row{
+    display: inline-flex;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 20px 20px;
+    width: 100%;
+    color: white;
+}
+
+.col{
+    padding: 10px; 
+}
+
+.p{
+    font-size: small;
+    padding: 10px;
+}
+
+.liUndecoration{
+    list-style: none;
+    font-size: small;
+    padding: 5px;
+}

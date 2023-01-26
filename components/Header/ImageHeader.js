@@ -1,6 +1,6 @@
-import styles from '../../styles/Landing.module.css'
+import styles from '../../styles/ImageHeader.module.css'
 
-const Img = (props) => {
+const ImgHeader = (props) => {
     const src = props.src;
     const alt = props.alt;
 
@@ -13,5 +13,5 @@ const Img = (props) => {
     );
 }
 
-export default Img
+export default ImgHeader;
 

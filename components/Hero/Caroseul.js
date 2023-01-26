@@ -1,47 +1,24 @@
-import Carousel from 'react-bootstrap/Carousel';
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+import styles from "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 
-function CarouselFadeExample() {
-  return (
-    <Carousel fade>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=First slide&bg=373940"
-          alt="First slide"
-        />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=Second slide&bg=282c34"
-          alt="Second slide"
-        />
+class DemoCarousel extends Component {
+    render() {
+        return (
+            <Carousel style={{margin: '100px 100px'}} showThumbs={false} showStatus={false} infiniteLoop={true} width={'450px'}>
+                <div>
+                    <img src="http://2.bp.blogspot.com/-UmoeCydFsuk/VeGxqFmJTxI/AAAAAAAAFmY/pxqw_nCau-4/s1600/socrate-sapere.jpg" />
+                </div>
+                <div>
+                    <img src="https://www.frasidadedicare.it/frasidadedicare/wp-content/uploads/2020/07/frasi-socrate.jpg" />
+                </div>
+                <div>
+                    <img src="https://www.aforismicelebri.com/wp-content/uploads/2021/01/socrate-muovere-se-stesso-citazione.jpg" />
+                </div>
+            </Carousel>
+        );
+    }
+};
 
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=Third slide&bg=20232a"
-          alt="Third slide"
-        />
-
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
-  );
-}
-
-export default CarouselFadeExample;
+export default DemoCarousel;

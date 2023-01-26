@@ -5,19 +5,19 @@
 
 .card {
     padding: 1rem 1.2rem;
-    background: rgb(81, 66, 95);
-    border: none;
+    background: transparent;
+    border-radius: 5px;
     text-align: center;
     margin: 10px 20px;
     padding: auto;
-    max-width: 100%;
-    height: 100%;
+    max-width: auto;
+    max-height: 100%;
   }
 
   .cardtitle{
     color: rgb(255,255,255);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding: 10px 15px;
+    padding: 10px 2px;
   }
   
   .cardcontent{
@@ -26,19 +26,18 @@
   }
 
   .icon{
-    color: blue;
-    font-size: 300%;
+    background-color: linear-gradient(to right, #33ccff 0%, #ff99cc 100%);
   }
 
   .buttoncard{
-    background-color: '';
+    background-color: orangered;
+    border-radius: 16px;
     border: none;
     color: rgb(255,255,255);
-    padding: 10px 20px;
+    padding: 5px 30px;
+    margin: 4px 2px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    margin: 4px 2px;
     cursor: pointer;
-    border-radius: 16px;
   }

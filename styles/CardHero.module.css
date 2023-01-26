@@ -3,11 +3,11 @@
     border-radius: 5px;
     background: rgb(81, 66, 95);
     border: none;
-    text-align: justify;
-    margin: 5px;
-    padding: auto;
-    max-width: auto;
-    height: 100px;
+    text-align: start;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 20px 10px;
+    max-width: 50%;
+    max-height: 100%;
   }
 
   .cardtitle{
@@ -19,5 +19,7 @@
   }
 
   .cardlink{
-    color:rgb(32, 12, 51);
+    color:rgba(184, 99, 184, 0.699);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
   }

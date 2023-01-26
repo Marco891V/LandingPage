@@ -1,0 +1,16 @@
+.row{
+    background-color: transparent;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: small;
+    text-align: justify;
+    padding:10px 25px;
+}
+
+.rowCopy{
+    background-color: rgb(107, 3, 110);
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: small;
+    padding:10px 25px;
+}

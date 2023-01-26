@@ -4,13 +4,14 @@ const CardHero = (props) => {
     const title = props.title;
     const content = props.content;
     const href = props.href;
-    const link = props.link;
+    const textLink = props.textLink;
 
     return (
         <div className={styles.card}>
             <h4 className={styles.cardtitle}><b>{title}</b></h4>
             <p className={styles.cardcontent}>{content}</p>
-            <a className={styles.cardlink} href={props.href}>{link}</a>
+            <br />
+            <a className={styles.cardlink} href={href}>{textLink}</a>
         </div>
     );
 }

@@ -1,0 +1,57 @@
+.topnav{
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.topnavIcon{
+    float: left;
+    color: white;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.topnavA{
+    float: left;
+    color: white;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.topnavLogin {
+    float: right;
+    color: white;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.buttonNav {
+    float: right;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    align-content: center;
+    background-color: transparent;
+    border: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: white;
+    color: rgb(255, 255, 255);
+    margin: 5px;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+.topnavA:hover {
+    background-color: rgba(131, 18, 116, 0.438);
+    color: white;
+}
+

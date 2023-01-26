@@ -1,0 +1,7 @@
+.imgheader {
+    background-image: linear-gradient(to right, #33ccff 0%, #ff99cc 100%);
+    border-radius: 10px;
+    margin-left: 50px;
+    max-height: 300px;
+    width: auto;
+}

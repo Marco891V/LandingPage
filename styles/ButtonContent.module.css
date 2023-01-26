@@ -1,0 +1,8 @@
+.buttoncontent {
+    background: linear-gradient(to left, #33ccff 0%, #ff99cc 100%);
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    padding: 10px 30px;
+    color: rgb(255, 255, 255);
+}
