@@ -1,7 +1,28 @@
-.imgheader {
+/*--- Desktop ---*/
+
+.imgHeader {
     background-image: linear-gradient(to right, #33ccff 0%, #ff99cc 100%);
     border-radius: 10px;
     margin-left: 50px;
     max-height: 300px;
-    width: auto;
+    margin: 20px;
+}
+
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+  
+}
+
+
+/*--- Mobile ---*/
+
+@media (max-width: 700px) {
+    .imgHeader {
+        background-image: linear-gradient(to right, #33ccff 0%, #ff99cc 100%);
+        border-radius: 10px;
+        margin: 10px 5px;
+        max-height: 100%;
+        max-width: 100%;
+    }
 }

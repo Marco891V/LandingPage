@@ -7,9 +7,8 @@ function ImgHero(props) {
         <img 
             className={styles.imghero}
             style={{
-                height: type === 'large' ? '400px' : (type === 'small' ? '300px' : null),
-                width: type === 'large' ? '800px' : (type === 'small' ? '300px' : null),
-                margin: type === 'small' ? '20px, 50px, 20px, 20px' : null
+                height: type === 'large' ? '400px' : (type === 'small' ? '90%' : null),
+                width: type === 'large' ? '800px' : (type === 'small' ? '90%' : null),
             }} 
             src={src}
             alt={alt}

@@ -5,14 +5,14 @@ function ClientsBar(props) {
 
     return (
         <>
-        <div className={styles.row}>
-            <div className={styles.boxclient}>
-                <img
-                    className={styles.imgclient}
-                    src={client.image}
-                />
+            <div className={styles.row}>
+                <div className={styles.boxClient}>
+                    <img
+                        className={styles.imgClient}
+                        src={client.image}
+                    />
+                </div>
             </div>
-        </div>
         </>
     );
 }

@@ -4,7 +4,7 @@ const Button = (props) => {
     const title = props.title 
 
     return(
-        <button className={styles.buttoncontent}>
+        <button className={styles.buttonContent}>
             {title}
         </button>
     )

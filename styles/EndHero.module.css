@@ -1,5 +1,6 @@
-.row{
-  background: radial-gradient(rgb(27, 27, 206), rgb(75, 44, 133), rgb(99, 8, 87)) ;
+/* Desktop */
+.row {
+  background: radial-gradient(rgb(27, 27, 206), rgb(75, 44, 133), rgb(99, 8, 87));
   color: white;
   text-align: center;
   width: auto;
@@ -8,7 +9,7 @@
   padding: 60px 30px;
 }
 
-.button{
+.button {
   background-color: black;
   color: white;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -23,4 +24,34 @@
 .p {
   font-size: larger;
   padding: 10px 5px;
+}
+
+
+
+/*  Mobile  */
+
+@media (max-width: 700px) {
+  .row {
+    background: radial-gradient(rgb(27, 27, 206), rgb(75, 44, 133), rgb(99, 8, 87));
+    color: white;
+    text-align: center;
+    width: auto;
+    height: auto;
+    margin-top: 30px;
+    padding: 20px 10px;
+  }
+
+  .p {
+    font-size: medium;
+    padding: 10px 5px;
+  }
+
+  .button {
+    background: black;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 5px 15px;
+    color: rgb(255, 255, 255);
+  }
 }

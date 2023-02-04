@@ -1,13 +1,12 @@
-import Navbar from '../components/Header/NavBar'
+import dynamic from 'next/dynamic'
 import Button from '../components/Hero/Button'
 import TitleSection from '../components/common/TitleSection'
 import ImgHeader from '../components/Header/ImageHeader'
 import ImgHero from '../components/Hero/ImageHero'
 import ClientsBar from '../components/clients/clientsBar'
-import DemoCarousel from '../components/Hero/Caroseul'
+import DemoCarousel from '../components/Hero/DemoCarousel'
 import CardHero from '../components/Hero/CardHero'
 import Card from '../components/Hero/Card'
-import CardDynamic from '../components/Hero/CardDynamic'
 import CarouselBrand from '../components/Hero/CarouselBrand'
 import EndHero from '../components/Hero/EndHero'
 import { DiCss3 } from "react-icons/di"
@@ -17,6 +16,15 @@ import NewsLetter from '../components/footer/NewsLetter'
 import Privacy from '../components/footer/PrivacyCopyr'
 import styles from '../styles/Home.module.css'
 
+const CardDynamic = dynamic(
+  () => import('../components/Hero/CardDynamic'),
+  { ssr: false }
+)
+
+const Navbar = dynamic(
+  () => import('../components/Header/NavBar'),
+  { ssr: false }
+)
 
 export default function Home() {
 
@@ -61,20 +69,20 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <div className='container'>
-        <div className={styles.flexcontainer}>
-          <div className={styles.textheader}>
+      <div>
+        <div className={styles.flexContainer}>
+          <div className={styles.textHeader}>
             <h1 className={styles.h1} ><strong>Al-Powered Brand Tracking</strong></h1>
             <p className={styles.p}>We help brands make better marketing decisions by
               delivering world-class, scalable insights.</p>
             <Button title={'Book Demo'} />
           </div>
-          <div className='col-md-4'>
+          <div className={styles.col}>
             <ImgHeader src={"https://www.upmagazinearezzo.it/atladv/wp-content/uploads/2021/01/img-01.png"} />
           </div>
         </div>
         <p className={styles.p}>Trusted by some of the world's most innovative brands</p>
-        <div className={styles.flexcontainer}>
+        <div className={styles.containerClients}>
           {clients.map((client) => {
             return (
               <ClientsBar
@@ -84,7 +92,7 @@ export default function Home() {
             )
           })}
         </div>
-        <div className={styles.flexcontainer}>
+        <div className={styles.flexContainer}>
           <div className={styles.containerImage}>
             <ImgHero src="https://mobile-marketing.it/wp-content/uploads/2022/12/Social-Media-Comparison-Chart-Infographic-Graph-13.png" />
           </div>
@@ -107,22 +115,22 @@ export default function Home() {
         <TitleSection
           title="Smarter Tools. Better Marketing Decisions."
         />
-        <div className={styles.flexcontainer}>
-          <div className='col-md-4'>
+        <div className={styles.flexContainer}>
+          <div className=''>
             <Card
               icon={() => <DiCss3 />}
               title={'Castomizable Dashboard'}
               content={'Measure only what you need. Our intuitive dashboard can be customized to track the KPIs most important for you'}
             />
           </div>
-          <div className='col-md-4'>
+          <div className=''>
             <Card
               icon={() => <DiCss3 />}
               title={'Reliable Data'}
               content={'Get high-quality insights generated throught machine learning algorithms to ensure unprecedented occuracy and granularity'}
             />
           </div>
-          <div className='col-md-4'>
+          <div className=''>
             <Card
               icon={() => <DiCss3 />}
               title={'Deep Segmentation'}
@@ -130,16 +138,13 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className='row'>
-          <div className='col-12'></div>
-        </div>
         <TitleSection
           title="Access the Pulse of Human Perception"
         />
         <div className={styles.row}>
-          <div className='col'>
+          <div className=''>
             <ImgHero
-              type="large"
+              type="small"
               src="https://www.mlaworld.com/wp-content/uploads/2015/08/ragazza-che-ascolta-musica.jpg"
             />
           </div>
@@ -148,15 +153,15 @@ export default function Home() {
           title="Hear From Our Customers"
         />
         <div className={styles.centerCarouselBrand}>
-       <CarouselBrand />
-       </div>
-        <div className={styles.flexcontainer}>
-          <div className='col-md-2'>
+          <CarouselBrand />
+        </div>
+        <div className={styles.flexContainer}>
+          <div className={styles.col}>
             <ImgHero
               type="small"
               src="https://www.rivaliq.com/wp-content/uploads/2015/01/engineering-and-marketing.jpg" />
           </div>
-          <div className='col-md-10' style={{margin: 'auto'}}>
+          <div className='col-md-10' style={{ margin: 'auto' }}>
             <DemoCarousel />
           </div>
         </div>
@@ -164,7 +169,7 @@ export default function Home() {
           title="Dive Into the World of Brand Tracking"
         />
         <div className={styles.centerCarousel}>
-        <CardDynamic />
+          <CardDynamic />
         </div>
         <div className={styles.row}>
           <Button title={'Learn More'} />
@@ -176,9 +181,7 @@ export default function Home() {
             buttonTitle={'Book Demo'}
           />
         </div>
-        <div className='row'>
-          <Footer />
-        </div>
+        <Footer />
         <NewsLetter />
         <Privacy />
       </div>

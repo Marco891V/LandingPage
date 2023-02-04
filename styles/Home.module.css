@@ -151,6 +151,7 @@
   background-clip: content-box;
 }
 
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
@@ -173,82 +174,6 @@
   }
 }
 
-/* Mobile */
-@media (max-width: 700px) {
-  .content {
-    padding: 4rem;
-  }
-
-  .grid {
-    grid-template-columns: 1fr;
-    margin-bottom: 120px;
-    max-width: 320px;
-    text-align: center;
-  }
-
-  .card {
-    padding: 1rem 2.5rem;
-  }
-
-  .card h2 {
-    margin-bottom: 0.5rem;
-  }
-
-  .center {
-    padding: 8rem 0 6rem;
-  }
-
-  .center::before {
-    transform: none;
-    height: 300px;
-  }
-
-  .description {
-    font-size: 0.8rem;
-  }
-
-  .description a {
-    padding: 1rem;
-  }
-
-  .description p,
-  .description div {
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    width: 100%;
-  }
-
-  .description p {
-    align-items: center;
-    inset: 0 0 auto;
-    padding: 2rem 1rem 1.4rem;
-    border-radius: 0;
-    border: none;
-    border-bottom: 1px solid rgba(var(--callout-border-rgb), 0.25);
-    background: linear-gradient(
-      to bottom,
-      rgba(var(--background-start-rgb), 1),
-      rgba(var(--callout-rgb), 0.5)
-    );
-    background-clip: padding-box;
-    backdrop-filter: blur(24px);
-  }
-
-  .description div {
-    align-items: flex-end;
-    pointer-events: none;
-    inset: auto 0 0;
-    padding: 2rem;
-    height: 200px;
-    background: linear-gradient(
-      to bottom,
-      transparent 0%,
-      rgb(var(--background-end-rgb)) 40%
-    );
-    z-index: 1;
-  }
-}
 
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) {
@@ -280,31 +205,39 @@
 
 /*----- CSS for landing Page -----*/
 
-.flexcontainer{
+/*--- Desktop ---*/
+.flexContainer {
   display: flex;
-  margin: 40px;
 }
 
-.textheader{
+.containerClients{
+  display: flex;
+  padding: 20px;
+}
+
+.textHeader {
   color: rgb(0,0,0);
   text-align: justify;
   margin: auto;
-  width: 500px;
+  margin-left: 15px;
+  padding: 20px 20px;
+  width: 100%;
 }
 
 .h1 {
+  margin-left: 20px;
   color: white;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.p{
+.p {
   color: white;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: small;
-  padding-left: 20px;
+  margin-left: 20px;
 }
 
-.row{
+.row {
   text-align: center;
 }
 
@@ -327,7 +260,7 @@
   padding: 20px;
 }
 
-.li{
+.li {
   color: white;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-weight: bold;
@@ -336,13 +269,92 @@
   padding: 5px 20px;
 }
 
-.centerCarousel{
-  margin-inline-start: 20%;
-  padding: 20px;
+.centerCarousel {
+  padding-left: 150px;
+  padding-right: 150px;
   width: 100%;
 }
 
-.centerCarouselBrand{
+/*.centerCarouselBrand{
   margin-inline: 35%;
   width: 30%;
+}*/
+
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+  .p {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: small;
+    margin-left: 40px;
+  }
+
+}
+
+
+/* --- Mobile --- */
+@media (max-width: 700px) {
+
+  .flexContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .containerClients{
+    display: flex;
+    padding: 10px;
+  }
+
+  .col{
+    display: flex;
+    justify-content: center;
+  }
+
+  .textHeader {
+    color: rgb(0,0,0);
+    text-align: center;
+    margin: auto;
+    width: 100%;
+  }
+
+  .h1 {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .p {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: small;
+    padding-bottom: 5px;
+    text-align: center;
+  }
+
+  .containerImage {
+    max-width: 100%;
+  }
+
+  .containerCard {
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  .li {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: small;
+    text-align: justify;
+    list-style: none;
+    padding: 5px 20px;
+  }
+
+  .centerCarousel {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }

@@ -1,8 +1,10 @@
-.row{
+/*  Desktop  */
+
+.row {
     margin: auto;
 }
 
-.imgclient {
+.imgClient {
     background-image: transparent;
     margin-right: 30px;
     margin-left: 30px;
@@ -10,14 +12,37 @@
     max-width: 150px;
 }
 
-.boxclient {
+.boxClient {
     margin: 5px;
     width: auto;
 }
 
-.card {
-    width: 50%;
-    border-color: black;
-    border: 5px;
-    border-radius: 5px;
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+    .imgClient {
+        background-image: transparent;
+        margin-right: 30px;
+        margin-left: 30px;
+        max-height: 50px;
+        max-width: 100%;
+    }
+}
+
+
+
+
+/*  Mobile  */
+
+@media (max-width: 700px){
+    .row {
+        margin: auto;
+    }
+
+    .imgClient {
+        background-image: transparent;
+        margin-left: 10px;
+        max-height: 50%;
+        max-width: 50%;
+    }
 }

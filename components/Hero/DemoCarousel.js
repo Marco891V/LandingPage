@@ -6,7 +6,13 @@ import { Carousel } from 'react-responsive-carousel';
 class DemoCarousel extends Component {
     render() {
         return (
-            <Carousel style={{margin: '100px 100px'}} showThumbs={false} showStatus={false} infiniteLoop={true} width={'450px'}>
+            <Carousel 
+                style={{margin: '100px 100px'}} 
+                showThumbs={false} 
+                showStatus={false} 
+                emulateTouch={true}
+                infiniteLoop={true} 
+                width={'100%'}>
                 <div>
                     <img src="http://2.bp.blogspot.com/-UmoeCydFsuk/VeGxqFmJTxI/AAAAAAAAFmY/pxqw_nCau-4/s1600/socrate-sapere.jpg" />
                 </div>

@@ -11,7 +11,6 @@ const EndHero = (props) =>{
             <p className={styles.p}>{content}</p>
             <button className={styles.button}>{buttonTitle}</button>
         </div>
-
     );
 }
 

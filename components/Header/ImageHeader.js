@@ -6,7 +6,7 @@ const ImgHeader = (props) => {
 
     return (
         <img 
-            className={styles.imgheader} 
+            className={styles.imgHeader} 
             src={props.src}
             alt={props.alt}
         />

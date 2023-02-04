@@ -1,3 +1,5 @@
+/*  Desktop  */
+
 .row{
     background-color: transparent;
     color: white;
@@ -13,4 +15,18 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: small;
     padding:10px 25px;
+}
+
+
+/*  Mobile  */
+@media (max-width: 700px) {
+    .row{
+        background-color: transparent;
+        color: white;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: small;
+        text-align: start;
+        padding:10px 25px;
+    }
+
 }
