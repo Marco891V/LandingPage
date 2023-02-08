@@ -1,7 +1,7 @@
 import { AiOutlineCopyrightCircle } from 'react-icons/ai'
 import styles from '../../styles/PrivacyCopy.module.css'
 
-const Privacy = (props) => {
+function Privacy(props) {
     return(
         <>
             <div className={styles.row}>

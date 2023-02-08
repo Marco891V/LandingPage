@@ -2,7 +2,7 @@ import { SlSocialLinkedin, SlSocialInstagram } from 'react-icons/sl'
 import { TiSocialTwitter, TiSocialFacebookCircular, TiSocialYoutube } from 'react-icons/ti'
 import styles from '../../styles/NewsLetter.module.css'
 
-const NewsLetter = (props) => {
+function NewsLetter(props) {
 
     return (
         <>

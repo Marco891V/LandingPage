@@ -1,6 +1,6 @@
 import styles from '../../styles/CardHero.module.css'
 
-const CardHero = (props) => {
+function CardHero(props) {
     const title = props.title;
     const content = props.content;
     const href = props.href;

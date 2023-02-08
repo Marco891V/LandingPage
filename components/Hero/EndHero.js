@@ -1,6 +1,6 @@
 import styles from '../../styles/EndHero.module.css'
 
-const EndHero = (props) =>{
+function EndHero(props) {
     const title = props.title;
     const content = props.content;
     const buttonTitle = props.buttonTitle;

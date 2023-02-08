@@ -1,6 +1,6 @@
 import styles from '../../styles/ButtonContent.module.css'
 
-const Button = (props) => {
+function Button(props) {
     const title = props.title 
 
     return(

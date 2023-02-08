@@ -81,7 +81,7 @@ export default function Home() {
             <ImgHeader src={"https://www.upmagazinearezzo.it/atladv/wp-content/uploads/2021/01/img-01.png"} />
           </div>
         </div>
-        <p className={styles.p}>Trusted by some of the world's most innovative brands</p>
+        <p className={styles.pClient}>Trusted by some of the world's most innovative brands</p>
         <div className={styles.containerClients}>
           {clients.map((client) => {
             return (

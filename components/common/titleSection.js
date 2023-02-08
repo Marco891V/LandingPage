@@ -1,6 +1,6 @@
 import styles from '../../styles/TitleSection.module.css'
 
-const TitleSection = (props) => {
+function TitleSection(props) {
     const title = props.title;
 
     return(

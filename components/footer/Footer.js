@@ -1,7 +1,7 @@
 import { SiNextdotjs } from 'react-icons/si'
 import styles from '../../styles/Footer.module.css'
 
-const Footer = (props) => {
+function Footer(props) {
     return (
         <>
             <div className={styles.row}>

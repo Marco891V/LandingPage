@@ -22,10 +22,9 @@
 @media (min-width: 701px) and (max-width: 1120px) {
     .imgClient {
         background-image: transparent;
-        margin-right: 30px;
-        margin-left: 30px;
+        margin: 5px;
         max-height: 50px;
-        max-width: 100%;
+        width: 100%;
     }
 }
 
@@ -34,9 +33,14 @@
 
 /*  Mobile  */
 
-@media (max-width: 700px){
+@media (max-width: 700px) {
     .row {
         margin: auto;
+    }
+
+    .boxClient {
+        margin: 5px;
+        width: 100%;
     }
 
     .imgClient {
